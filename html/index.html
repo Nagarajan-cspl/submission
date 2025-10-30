@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head Section -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="https://via.placeholder.com/150">
+        <h1>Hi I am Nagarajan,<br><span>Nagarajan Ramesh</span></h1>
+        <a href="#contact-form" class="button">Say Hello!</a>
+    </header>
+
+    <hr>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About me</h2>
+        <p>A nature lover exploring every part of the world!!!</p>
+    </section>
+
+    <!-- Contact Form -->
+    <div id="contact-form">
+        <h2>Impressed?<br>Get in touch</h2>
+        <form method="post" action="">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <textarea placeholder="Message here" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery">
+        <h3>Wanna see my work!!!<br>Here are they</h3>
+        <table cellspacing="10" cellpadding="0" align="center">
+            <tr>
+                <td><img src="https://tse3.mm.bing.net/th/id/OIP.IygOSpAYN7rVoTF-Gx0WvgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Work 1"></td>
+                <td><img src="https://tse1.mm.bing.net/th/id/OIP.BAlW8o2QK3Ayy08tihHX6wHaE7?w=202&h=135&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Work 2"></td>
+                <td><img src="https://tse3.mm.bing.net/th/id/OIP.Tqu5Amhbh2eMwyVWlZGoEgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Work 3"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="https://external-preview.redd.it/zD2ueWdqoulA36uM5C2suk0xNuWQ9mqLiMKMJJjpwKc.jpg?auto=webp&s=cf9d1cffa957919af2c291a2c87c81bcbf246ff8" alt="Work 4"></td>
+                <td><img src="https://images.squarespace-cdn.com/content/v1/6597fda162aceb478f7ad2f3/1734342317778-7TD8EG1OXZCBNDZPSXVI/Winnats%2BPass%2BSeptember%2B27%2C%2B2014%2B-%2Bdanscape.co-2+Peak+district.jpg" alt="Work 5"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Newsletter -->
+    <div id="newsletter">
+        <h2>Let's stay connected</h2>
+        <div class="newsletter-input">
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+        <a href="#" class="button">Submit</a>
+    </div>
+
+    <!-- Demo Video Section -->
+    <div id="demo-video">
+    <h2>Watch My Demo Video</h2>
+    <video width="640" height="360" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 All rights reserved</p>
+    </footer>
+</body>
+</html>
