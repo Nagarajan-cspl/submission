@@ -35,7 +35,7 @@ a, button {
     font-size: 20px;
     line-height: 45px;
     color: black;
-    text-decoration: none; /* fixed typo */
+    text-decoration: none;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -45,13 +45,25 @@ a:hover, button:hover {
     background-color: rgba(58, 135, 183, 0.674);
 }
 
-table img {
-    height: 150px;
-    width: 200px;
+/* images responsive */
+table img,
+#gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    display: block;
 }
 
+/* table layout */
+#gallery table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Header Section */
 header {
     background-color: rgb(6, 132, 132);
     background-position: center top;
@@ -65,6 +77,7 @@ header span {
     color: rgb(10, 123, 119);
 }
 
+/* Contact Form */
 #contact-form {
     background-color: aliceblue;
     padding-top: 30px;
@@ -73,7 +86,8 @@ header span {
 
 input, textarea {
     display: block;
-    width: 320px;
+    width: 90%;
+    max-width: 400px;
     height: auto;
     padding: 10px;
     margin: 0 auto 8px auto;
@@ -96,12 +110,14 @@ hr {
     border-top: 1px solid #fafafa;
 }
 
+/* Gallery Section */
 #gallery {
     background-color: #ffffff;
     padding-top: 40px;
     padding-bottom: 100px;
 }
 
+/* Newsletter Section */
 #newsletter {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -123,11 +139,12 @@ footer p {
     margin: 0;
 }
 
-/* Demo Video Section */
+
 #demo-video {
-    background-color: #f0f8ff; /* light background to match the theme */
+    background-color: #f0f8ff;
     padding-top: 60px;
     padding-bottom: 80px;
+    text-align: center;
 }
 
 #demo-video h2 {
@@ -136,7 +153,11 @@ footer p {
     margin-bottom: 20px;
 }
 
+
 #demo-video video {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
     display: block;
     margin: 0 auto 20px auto;
     border-radius: 10px;
@@ -148,3 +169,18 @@ footer p {
     color: #555;
 }
 
+
+@media (max-width: 768px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; }
+    p { font-size: 20px; }
+
+    a, button {
+        width: 140px;
+        font-size: 18px;
+    }
+
+    #gallery table {
+        width: 100%;
+    }
+}
