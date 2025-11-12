@@ -1,0 +1,250 @@
+/* General App Styles */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* ================== Popup Styles ================== */
+.Popupbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darker, cleaner overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.Popinner {
+  background-color: #f1f3f6; /* Softer background */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transition: all 0.3s ease-in-out;
+}
+
+.Popinner h3 {
+  color: #0d47a1; /* Dark blue title */
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.Popinner p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.Popinner button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Popinner button:hover {
+  background-color: #0d47a1;
+}
+
+/* ================== Forms Styles ================== */
+.Forms, .FormContainer,.Fetch {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.Forms input, .FormContainer input ,.Fetch input {
+  width: 90%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.Forms input:focus, .FormContainer input:focus , .Fetch input:focus{
+  border-color: #0d47a1;
+}
+
+/* Buttons */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button-row button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: #a0a9ae;
+  transition: background-color 0.3s ease;
+}
+
+.button-row button:hover {
+  background-color: #195f73;
+}
+
+#incre, #decre {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #72a1ae;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#incre:hover, #decre:hover {
+  background-color: #1aa1c7;
+}
+
+#submitt {
+  border: 2px solid #168540;
+  background-color: rgba(42, 132, 42, 0.47);
+  color: white;
+  cursor: pointer;
+}
+
+#submitt:hover {
+  background-color: #3f7253;
+}
+
+#reset {
+  border: 2px solid #a00909;
+  background-color: rgba(255, 17, 0, 0.38);
+  color: white;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #ae5454;
+}
+
+.navbar {
+  background-color: #0d47a1; 
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+
+}
+
+.nav-links a:hover {
+  background-color: #1976d2; 
+  color: #ffca28; 
+}
+
+
+.logout-btn {
+  background-color: #ff1744; 
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logout-btn:hover {
+  background-color: #f50057; 
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .logout-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
